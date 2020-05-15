@@ -22,9 +22,8 @@ public class Trait extends IdEntity {
     @Enumerated(EnumType.ORDINAL)
     private GameType gameType;
     private Boolean isCustom;
-    @ManyToMany
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-            foreignKey = @ForeignKey(name = "fk_trait_feature"))
+    @OneToMany
+    @JoinTable
     private List<Effect> effects;
 
 }

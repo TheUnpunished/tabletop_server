@@ -18,9 +18,8 @@ public class Background extends IdEntity {
 
     private String name;
     private String introduction;
+    @JoinTable
     @OneToMany
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-            foreignKey = @ForeignKey(name = "fk_background_trait"))
     private List<Trait> traits;
     private Boolean isCustom;
 

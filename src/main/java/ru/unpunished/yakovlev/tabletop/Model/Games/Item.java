@@ -21,8 +21,7 @@ public class Item extends Effect {
     private Integer weight;
     private Integer price;
     @OneToMany
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-    foreignKey = @ForeignKey(name = "fk_item_feature"))
+    @JoinTable
     private List<Effect> itemEffects;
 
 }

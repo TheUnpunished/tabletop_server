@@ -16,8 +16,7 @@ public class Spell extends Effect {
 
     private String description;
     @OneToMany
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-            foreignKey = @ForeignKey(name = "fk_spell_effect"))
+    @JoinTable
     private List<Effect> effects;
 
 }

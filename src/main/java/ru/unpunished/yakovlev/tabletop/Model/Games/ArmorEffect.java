@@ -14,6 +14,5 @@ public class ArmorEffect extends Effect {
 
     private Integer description;
     private Integer value;
-    private Boolean isCustom;
 
 }

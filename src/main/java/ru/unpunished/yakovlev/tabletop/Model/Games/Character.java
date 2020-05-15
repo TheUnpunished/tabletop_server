@@ -23,9 +23,9 @@ public class Character extends IdEntity {
     private Integer lvl;
     private Integer maxHealth;
     private Integer currentHealth;
-    @ManyToMany
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-    foreignKey = "fk_")
+    private Integer armorClass;
+    @OneToMany
+    @JoinTable
     private List<Language> languages;
     @ManyToOne
     @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
@@ -34,7 +34,7 @@ public class Character extends IdEntity {
     @Enumerated(EnumType.ORDINAL)
     private GameType gameType;
     private Boolean isPublic;
-    @OneToOne
+    @ManyToOne
     @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
             foreignKey = @ForeignKey(name = "fk_character_owner_profile"))
     private Profile owner;
@@ -43,7 +43,7 @@ public class Character extends IdEntity {
     foreignKey = @ForeignKey(name = "fk_character_share"))
     private List<Profile> sharedWith;
     @ManyToOne
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "original_id")},
+    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
     foreignKey = @ForeignKey(name = "fk_character_original"))
     private Character originalCharacter;
 

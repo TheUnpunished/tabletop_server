@@ -15,6 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Entity
+@SequenceGenerator(name = "idGenerator", sequenceName = "DnDFeat_seq", allocationSize=1)
 public class DnDFeat extends IdEntity {
 
     @ManyToOne
@@ -26,9 +27,8 @@ public class DnDFeat extends IdEntity {
     foreignKey = @ForeignKey(name = "fk_feat_class"))
     private GameClass reqClass;
     private Integer reqLvl;
+    @JoinTable
     @OneToMany
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-            foreignKey = @ForeignKey(name = "fk_feat_effect"))
     private List<Effect> effects;
 
 

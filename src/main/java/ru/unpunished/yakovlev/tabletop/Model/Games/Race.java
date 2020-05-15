@@ -18,6 +18,7 @@ import java.util.List;
 public class Race extends IdEntity {
 
     private String name;
+    private String description;
     @Enumerated(EnumType.ORDINAL)
     private GameType gameType;
     @OneToMany

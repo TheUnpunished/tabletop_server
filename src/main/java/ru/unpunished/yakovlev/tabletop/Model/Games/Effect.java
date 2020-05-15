@@ -20,11 +20,9 @@ public class Effect extends IdEntity {
     private String name;
     @Enumerated(EnumType.ORDINAL)
     private GameType gameType;
-    @ManyToMany
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-    foreignKey = @ForeignKey(name = "fk_effect_character"))
-    private List<Character> affectedCharacters;
     //permanent = (duration < 0) or (duration = long.max)
     private Long duration;
+    private Boolean isCustom;
+    private Boolean isOriginal;
 
 }

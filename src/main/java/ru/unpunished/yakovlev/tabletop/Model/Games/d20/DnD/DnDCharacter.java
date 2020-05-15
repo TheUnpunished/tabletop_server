@@ -15,9 +15,7 @@ import javax.persistence.Entity;
 @Entity
 public class DnDCharacter extends d20Character {
 
-    private Integer armorClass;
     private Integer initiative;
     private Integer profBonus;
-
 
 }

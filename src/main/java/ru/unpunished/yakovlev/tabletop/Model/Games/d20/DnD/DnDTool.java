@@ -1,9 +1,18 @@
 package ru.unpunished.yakovlev.tabletop.Model.Games.d20.DnD;
 
-public class DnDTool {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import ru.unpunished.yakovlev.tabletop.Model.Games.Effect;
 
-    private Long id;
-    private String name;
+import javax.persistence.Entity;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
+public class DnDTool extends Effect {
+
     private String description;
 
 }

@@ -16,7 +16,7 @@ import javax.persistence.InheritanceType;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class d20Ability extends Effect {
 
-    private Integer id;
+    private Integer ability_id;
     private Integer profMultiplier;
     private Integer value;
 

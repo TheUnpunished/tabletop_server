@@ -13,7 +13,7 @@ import javax.persistence.InheritanceType;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User extends IdEntity {
+public class TabletopUser extends IdEntity {
 
     private String login;
     private String passwordHash;

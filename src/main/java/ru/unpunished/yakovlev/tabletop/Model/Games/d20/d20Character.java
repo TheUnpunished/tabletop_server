@@ -8,7 +8,6 @@ import ru.unpunished.yakovlev.tabletop.Model.Games.Character;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Data
 public class d20Character extends Character {
     private d20Ability[] stats = new d20Ability[6];
