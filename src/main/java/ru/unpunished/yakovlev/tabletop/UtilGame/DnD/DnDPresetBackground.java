@@ -3,9 +3,7 @@ package ru.unpunished.yakovlev.tabletop.UtilGame.DnD;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import ru.unpunished.yakovlev.tabletop.Model.DnDBackground;
-
-import java.util.List;
+import ru.unpunished.yakovlev.tabletop.Model.Games.d20.DnD.DnDBackground;
 
 @AllArgsConstructor
 @NoArgsConstructor

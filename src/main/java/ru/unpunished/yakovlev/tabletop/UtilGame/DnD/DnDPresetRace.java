@@ -3,7 +3,7 @@ package ru.unpunished.yakovlev.tabletop.UtilGame.DnD;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import ru.unpunished.yakovlev.tabletop.Model.DnDRace;
+import ru.unpunished.yakovlev.tabletop.Model.Games.Race;
 
 @Getter
 @AllArgsConstructor
@@ -26,7 +26,7 @@ public enum DnDPresetRace {
     TIEFLING(Integer.toUnsignedLong(13)),
     AASIMAR(Integer.toUnsignedLong(14));
 
-    private DnDRace race;
+    private Race race;
 
     DnDPresetRace(Long id){
 

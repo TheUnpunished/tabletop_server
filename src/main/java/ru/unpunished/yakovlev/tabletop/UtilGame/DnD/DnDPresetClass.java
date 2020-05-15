@@ -3,7 +3,7 @@ package ru.unpunished.yakovlev.tabletop.UtilGame.DnD;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import ru.unpunished.yakovlev.tabletop.Model.DnDClass;
+import ru.unpunished.yakovlev.tabletop.Model.Games.GameClass;
 
 @Getter
 @AllArgsConstructor
@@ -23,7 +23,7 @@ public enum DnDPresetClass {
     WARLOCK(Integer.toUnsignedLong(10)),
     WIZARD(Integer.toUnsignedLong(11));
 
-    private DnDClass dnDClass;
+    private GameClass dnDClass;
 
     DnDPresetClass(Long id){
 

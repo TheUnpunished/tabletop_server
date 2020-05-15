@@ -1,7 +1,7 @@
 package ru.unpunished.yakovlev.tabletop.UtilGame.DnD;
 
 import lombok.NoArgsConstructor;
-import ru.unpunished.yakovlev.tabletop.Model.DnDCharacter;
+import ru.unpunished.yakovlev.tabletop.Model.Games.d20.DnD.DnDCharacter;
 
 @NoArgsConstructor
 public class DnDProficiencyBonusResolver {

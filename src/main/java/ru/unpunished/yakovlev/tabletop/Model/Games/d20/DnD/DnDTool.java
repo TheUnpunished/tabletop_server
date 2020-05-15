@@ -1,4 +1,4 @@
-package ru.unpunished.yakovlev.tabletop.Model;
+package ru.unpunished.yakovlev.tabletop.Model.Games.d20.DnD;
 
 public class DnDTool {
 

@@ -3,18 +3,18 @@ package ru.unpunished.yakovlev.tabletop.Model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import ru.unpunished.yakovlev.tabletop.Model.Games.Character;
 
+import javax.persistence.Entity;
 import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DnDRace {
+@Entity
+public class Profile extends User {
 
-    private Long id;
-    private String name;
-    private Integer[] statsAffection;
-    private List<DnDTool> toolsProficiencies;
-    private List<DnDSkill> skillProficiencies;
+    private String nickname;
+    private List<Character> characters;
 
 }

@@ -1,22 +1,23 @@
-package ru.unpunished.yakovlev.tabletop.Model;
+package ru.unpunished.yakovlev.tabletop.Model.Games.d20.DnD;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ru.unpunished.yakovlev.tabletop.UtilGame.DnD.DnDPresetRace;
+import ru.unpunished.yakovlev.tabletop.Model.Games.d20.d20Character;
+
+import javax.persistence.Entity;
 
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class DnDCharacter extends d20Character {
 
-    private DnDPresetRace race;
-    private Integer speed;
-    private DnDClass dnDClass;
     private Integer armorClass;
     private Integer initiative;
     private Integer profBonus;
+
 
 }
