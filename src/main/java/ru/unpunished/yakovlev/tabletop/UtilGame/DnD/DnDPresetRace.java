@@ -3,7 +3,7 @@ package ru.unpunished.yakovlev.tabletop.UtilGame.DnD;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import ru.unpunished.yakovlev.tabletop.Model.Games.Race;
+import ru.unpunished.yakovlev.tabletop.Model.Game.Race;
 
 @Getter
 @AllArgsConstructor

@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 public enum GameType {
 
-    OPEN(0),
-    DND(1);
+    OPEN,
+    DND;
 
-    private Integer id;
 }
