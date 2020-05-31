@@ -4,8 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.unpunished.yakovlev.tabletop.Model.IdEntity;
+import ru.unpunished.yakovlev.tabletop.UtilGame.Gender;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.SequenceGenerator;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -21,9 +24,12 @@ public class DnDPhysCharacteristics extends IdEntity {
     private String hairDescription;
     private String skinDescription;
     private String eyesDescription;
-    private String heightDescription;
-    private String weightDescription;
+    // в дюймах
+    private Double height;
+    // в футах
+    private Double weight;
     private Long age;
-    private String genderDescription;
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
 
 }

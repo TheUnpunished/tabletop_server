@@ -22,4 +22,5 @@ public class Spell extends Effect {
     @JoinTable
     private List<Effect> effects;
     private Integer range;
+    private Integer radius;
 }

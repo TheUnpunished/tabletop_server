@@ -15,7 +15,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ArmorEffect extends Effect {
 
-    private Integer description;
     private Integer value;
 
 }

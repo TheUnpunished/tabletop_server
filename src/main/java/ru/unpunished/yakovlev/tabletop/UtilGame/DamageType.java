@@ -1,8 +1,17 @@
 package ru.unpunished.yakovlev.tabletop.UtilGame;
 
-public enum  DamageType {
+public enum DamageType {
 
-    PHYSICAL,
-    MAGICAL,
-    TRUE
+    BLUNT,
+    SOUND,
+    RADIATION,
+    NECROTIC,
+    FIRE,
+    PSYCHIC,
+    SLASH,
+    FORCE_FIELD,
+    COLD,
+    ELECTRICITY,
+    POISON
+
 }

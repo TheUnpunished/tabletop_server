@@ -20,7 +20,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 public class DnDArmorProficiency extends Effect {
 
     @Enumerated(EnumType.STRING)
-    private DnDArmorType dnDArmorType;
-    private Integer multipliter;
+    private DnDArmorType armorType;
 
 }

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.unpunished.yakovlev.tabletop.Model.IdEntity;
+import ru.unpunished.yakovlev.tabletop.UtilGame.EffectSource;
 import ru.unpunished.yakovlev.tabletop.UtilGame.GameType;
 
 import javax.persistence.*;
@@ -22,8 +23,11 @@ public class Trait extends IdEntity {
 
     private String name;
     private String description;
-    @Enumerated(EnumType.ORDINAL)
+    private Integer reqLvl = 0;
+    @Enumerated(EnumType.STRING)
     private GameType gameType;
+    @Enumerated(EnumType.STRING)
+    private EffectSource source;
     private Boolean isCustom;
     @OneToMany
     @JoinTable

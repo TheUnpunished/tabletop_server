@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 @Data
 @MappedSuperclass
 @XmlAccessorType(XmlAccessType.FIELD)
-public abstract class IdEntity {
+public class IdEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idGenerator")
     private Long id;

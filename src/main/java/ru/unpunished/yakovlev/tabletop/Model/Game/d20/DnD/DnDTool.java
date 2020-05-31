@@ -20,8 +20,5 @@ import java.util.List;
 public class DnDTool extends Effect {
 
     private String description;
-    @OneToMany
-    @JoinTable
-    private List<Effect> effects;
 
 }

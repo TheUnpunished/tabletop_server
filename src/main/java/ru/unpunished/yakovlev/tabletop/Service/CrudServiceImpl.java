@@ -39,6 +39,10 @@ public abstract class CrudServiceImpl<T extends IdEntity, R extends GenericRepos
         genericRepository.delete(t);
     }
 
+    public void deleteById(Long id){
+        genericRepository.deleteById(id);
+    }
+
     public Optional<T> getOneById(Long id) {
         return genericRepository.findById(id);
     }

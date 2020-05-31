@@ -4,7 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.unpunished.yakovlev.tabletop.Model.IdEntity;
-import ru.unpunished.yakovlev.tabletop.UtilGame.DistractionType;
+import ru.unpunished.yakovlev.tabletop.UtilGame.DnD.DnDDistractionType;
+import ru.unpunished.yakovlev.tabletop.UtilGame.EffectSource;
+import ru.unpunished.yakovlev.tabletop.UtilGame.EffectType;
 import ru.unpunished.yakovlev.tabletop.UtilGame.GameType;
 
 import javax.persistence.*;
@@ -23,10 +25,12 @@ public class Effect extends IdEntity {
     private String name;
     @Enumerated(EnumType.ORDINAL)
     private GameType gameType;
-    //permanent = (duration < 0) or (duration = long.max)
+    //permanent = (duration < 0)
     private Long duration;
-    private Boolean isCustom;
-    private Boolean isOriginal;
-    private DistractionType distractionType;
+    @Enumerated(EnumType.STRING)
+    private EffectSource source;
+    @Enumerated(EnumType.STRING)
+    private EffectType effectType;
+    private Integer reqLvl = 0;
 
 }

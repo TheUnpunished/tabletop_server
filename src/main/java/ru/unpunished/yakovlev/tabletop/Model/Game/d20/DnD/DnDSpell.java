@@ -31,8 +31,8 @@ public class DnDSpell extends Spell {
     foreignKey = @ForeignKey(name = "fk_DnDSpell_reqIten"))
     private Item reqItem;
     @Enumerated(EnumType.STRING)
-    private DnDSpellSchool dnDSpellSchool;
-    @Enumerated
-    private DnDSpellArea dnDSpellArea;
+    private DnDSpellSchool spellSchool;
+    @Enumerated(EnumType.STRING)
+    private DnDSpellArea spellArea;
 
 }

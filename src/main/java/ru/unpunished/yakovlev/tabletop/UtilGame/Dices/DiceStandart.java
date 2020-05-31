@@ -2,6 +2,7 @@ package ru.unpunished.yakovlev.tabletop.UtilGame.Dices;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Random;
@@ -19,6 +20,11 @@ public class DiceStandart implements Dice{
         Integer result = 1 + random.nextInt(maxValue);
         random.setSeed(System.currentTimeMillis());
         return result;
+    }
+
+    @Override
+    public Integer throwMax() {
+        return maxValue;
     }
 
     DiceStandart(Integer maxValue){

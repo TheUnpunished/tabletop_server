@@ -10,5 +10,6 @@ public interface CrudService<T extends IdEntity>{
     T add(T t);
     T update(T t);
     void delete(T t);
+    void deleteById(Long id);
     Optional<T> getOneById(Long id);
 }

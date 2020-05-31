@@ -25,5 +25,8 @@ public class Background extends IdEntity {
     @OneToMany
     private List<Trait> traits;
     private Boolean isCustom;
+    @JoinTable
+    @OneToMany
+    private List<TraitChoice> traitChoices;
 
 }

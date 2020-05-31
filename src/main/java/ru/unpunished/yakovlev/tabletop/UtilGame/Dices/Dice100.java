@@ -20,6 +20,12 @@ public class Dice100 implements Dice {
         }
     }
 
+    @Override
+    public Integer throwMax() {
+        return 100;
+    }
+
+
     Dice100(){
         this.random = new Random(System.currentTimeMillis());
     }

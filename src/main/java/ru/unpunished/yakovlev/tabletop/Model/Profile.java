@@ -20,8 +20,6 @@ import java.util.List;
 public class Profile extends TabletopUser {
 
     private String nickname;
-    @OneToMany(mappedBy = "owner")
-    private List<Character> characters;
     private String email;
     private Date dateBirth;
 

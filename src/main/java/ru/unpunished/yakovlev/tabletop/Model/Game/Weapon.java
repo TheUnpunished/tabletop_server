@@ -20,9 +20,6 @@ public class Weapon extends Item {
     @OneToMany
     @JoinTable
     private List<Damage> damage;
-    @OneToMany
-    @JoinTable
-    private List<Damage> universalDamage;
     private Integer efficientRange;
     private Integer maxRange;
     @ManyToOne
@@ -30,9 +27,5 @@ public class Weapon extends Item {
     foreignKey = @ForeignKey(name = "fk_weapon_item"))
     private Item usesAmmo;
     private Boolean is2H;
-    private Boolean isLight;
-    private Boolean canBeThrown;
-    private Boolean needsReload;
-    private Boolean isFencing;
 
 }

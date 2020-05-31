@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import ru.unpunished.yakovlev.tabletop.Model.Game.Character;
 import ru.unpunished.yakovlev.tabletop.Model.Game.Effect;
 import ru.unpunished.yakovlev.tabletop.Model.Game.GameClass;
+import ru.unpunished.yakovlev.tabletop.Model.Game.Trait;
 import ru.unpunished.yakovlev.tabletop.Model.IdEntity;
 
 import javax.persistence.*;
@@ -21,18 +22,11 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class DnDFeat extends IdEntity {
 
-    @ManyToOne
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-    foreignKey = @ForeignKey(name = "fk_feat_character"))
-    private Character characterChoice;
-    @ManyToOne
-    @JoinColumns(value = {@JoinColumn(referencedColumnName = "id")},
-    foreignKey = @ForeignKey(name = "fk_feat_class"))
-    private GameClass reqClass;
-    private Integer reqLvl;
+    private String name;
+    private String description;
     @JoinTable
     @OneToMany
-    private List<Effect> effects;
-    private Boolean isCustom;
+    private List<Trait> traits;
+
 
 }

@@ -24,6 +24,7 @@ public class Item extends Effect {
     private Integer count;
     private Integer weight;
     private Integer price;
+    private Boolean equipped;
     @OneToMany
     @JoinTable
     private List<Effect> itemEffects;
